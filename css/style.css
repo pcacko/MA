@@ -178,10 +178,10 @@ Primary use: Multipurpose Template
     --section-padding-y: 120px;
     --menu-bar-height: 85px;
     --menu-bar-height-scrolled: 65px;
-    --color-dark-1: #010101;
+    --color-dark-1: #002a60;
     --color-dark-2: #171717;
     --color-dark-3: #272727;
-    --color-dark-3a: #333;
+    --color-dark-3a: #1a3559;
     --color-dark-4: #555;
     --color-gray-1: #757575;
     --color-gray-2: #888;
@@ -581,7 +581,7 @@ body{
     line-height: 1.67; 
 }
 a{
-    color: var(--color-dark-1);
+    color: var(--color-dark-2);
     text-decoration: underline;
     transition: color 0.1s var(--ease-default);
 }
@@ -1202,7 +1202,7 @@ hr.thick{
     transform: translateY(150%) translateZ(0.001px) skewY(10deg);
 }
 .link-hover-anim:hover{
-    color: inherit;
+    color: #004AAD;
 }
 .link-strong-unhovered{
     display: block;
@@ -1297,7 +1297,7 @@ a.btn-mod{
     box-sizing: border-box;
     padding: 3px 13px;
     color: #fff;
-    background: var(--color-dark-1);
+    background: var(--color-primary-1);
     border: 1px solid transparent;
     font-size: 12px;
     font-weight: 700;
@@ -1525,7 +1525,7 @@ a.btn-mod:focus{
     top: 0;
     left: 0;
     transform: scale(.7) translateY(55%);
-    background: var(--color-dark-3a);
+    background: var(--color-dark-1);
     border-radius: 100%;
     transition: all 0.25s cubic-bezier(0,0,.31,.99);
 }
@@ -3798,7 +3798,7 @@ a.logo:hover{
     width: 100%;
     float: none;
     overflow-x: hidden;
-    background: rgba(18,18,18, .995);
+    background: var(--color-dark-1);
 }
 .mobile-on .desktop-nav > ul{
     overflow-y: auto;
