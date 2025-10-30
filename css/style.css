@@ -197,7 +197,7 @@ Primary use: Multipurpose Template
     --color-primary-1: #004AAD;
     --color-primary-1-a: #375ae3;    
     --color-primary-light-1: #e3effe;
-    --color-primary-light-1-a: #bcd1f1;
+    --color-primary-light-1-a: #f5f3ea;
     --color-primary-2: #6f97cb;
     --color-primary-light-2: #e7defe;
     --color-primary-3: #004AAD;
@@ -281,10 +281,16 @@ img:not([draggable]), embed, object, video{
     width: 100%;
     height: auto;
 }
-
 .image-about {
   max-width: 100%;
   max-height: 500px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.image-about-large {
+  max-width: 100%;
+  max-height: 700px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
@@ -4235,11 +4241,8 @@ a.logo:hover{
 .bg-white{
     background-color: #fff;
 }
-.bg-gray-light-1{
-    background-color: var(--color-gray-light-1);
-}
-.bg-gray-light-2{
-    background-color: var(--color-gray-light-2);
+.bg-beige-light{
+    background-color: var(--color-primary-light-1-a);
 }
 .bg-dark-1{
     background-color: var(--color-dark-1) !important;
@@ -4485,7 +4488,7 @@ a.logo:hover{
 }
 .bg-light-alpha-80:before,
 .bg-light-alpha-80 .YTPOverlay:before{
-    background: rgba(252,252,252, .8);
+    background: rgba(245,243,234, .8);
 }
 .bg-light-alpha-90:before,
 .bg-light-alpha-90 .YTPOverlay:before{
@@ -5362,7 +5365,7 @@ a.logo:hover{
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #fff;
-    background: var(--color-dark-1);
+    background: var(--color-primary-1);
     transform: rotate(-5deg);
 }
 .marquee-style-2 .marquee-track > div{
