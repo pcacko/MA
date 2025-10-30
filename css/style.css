@@ -1097,25 +1097,6 @@ hr.thick{
     font-weight: 500;
     letter-spacing: -0.03em;
 }
-.hs-image-1{
-    max-width: 0.85em;
-    max-height: 0.85em;
-    margin-top: -0.2em;
-    vertical-align: middle;
-}
-.hs-image-1{
-    width: 0.85em;
-    height: 0.85em;
-    margin-top: -0.2em;
-    vertical-align: middle;
-}
-.hs-image-2{
-    width: 0.75em;
-    height: 0.75em;
-    margin-top: -0.2em;
-    vertical-align: middle;
-    border-radius: 50%;
-}
 .hs-image-3{
     height: 0.75em !important;
     margin-top: -0.2em;
