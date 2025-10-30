@@ -9,6 +9,9 @@
             Oddanie nieruchomości w zarządzanie to rozwiązanie idealne dla osób ceniących swój czas, spokój oraz profesjonalne podejście do zarządzania inwestycjami.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         
+        <!-- Preload kluczowego obrazu (logo) -->
+        <link rel="preload" as="image" href="images/Logo_morze_apartamentow.png" />
+
         <!-- Favicon -->
         <link rel="icon" href="images/Favicon.png" type="image/png" sizes="any">  
 
@@ -32,7 +35,7 @@
     <body class="appear-animate">
         
         <!-- Page Loader -->        
-        <div class="page-loader">
+        <div class="page-loader gradient">
             <div class="loader">Wczytywanie...</div>
         </div>
         <!-- End Page Loader -->
@@ -50,24 +53,25 @@
                     
                     <!-- Logo -->
                     <div class="nav-logo-wrap local-scroll">
-                        <a href="index.html" class="logo">
-                            <img src="images/Logo_morze_apartamentow.png" alt="Logo Morze Apartamentów" width="200" height="60" />
+                        <a href="/" class="logo">
+                            <img src="images/Logo_morze_apartamentow.png" alt="Logo Morze Apartamentów" width="200" height="60" decoding="async" fetchpriority="high" />
                         </a>
                     </div>
                     
                     <!-- Mobile Menu Button -->
-                    <div class="mobile-nav" role="button" tabindex="0">
+                    <div class="mobile-nav" role="button" tabindex="0" aria-controls="menu" aria-expanded="false">
                         <i class="mobile-nav-icon"></i>
                         <span class="visually-hidden">Menu</span>
                     </div>
                     
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
-                        <ul class="clearlist local-scroll">
+                        <ul id="menu" class="clearlist">
                             
                             <!-- Nav Element -->
                             <li>
-                                <a href="index.html">Strona główna</a>
+                                <a href="/">Strona główna</a>
+                            </li>
                             <!-- End Nav Element -->
 
                             <!-- Nav Element -->
@@ -122,10 +126,8 @@
                             <!-- End Languages -->  
                                                       
                             <li><a href="kontakt.html" class="opacity-1 no-hover"><span class="link-hover-anim underline" data-link-animate="y">Skontaktuj Się</span></a></li>                            
-                            <li><a href="#" class="opacity-1 no-hover"><span class="link-hover-anim underline" data-link-animate="y">Zaloguj Się</span></a></li>                            
-                        
                         </ul>                        
-
+                        
                     </div>
                     <!-- End Main Menu -->
                     
